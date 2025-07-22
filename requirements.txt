@@ -1,0 +1,16 @@
+# Blog du Modérateur Scraper - Dépendances Essentielles
+
+# Core scraping libraries
+beautifulsoup4>=4.12.3
+requests>=2.32.3
+lxml>=5.3.0
+
+# Database  
+pymongo>=4.10.1
+
+# Web framework
+Flask>=3.0.3
+Flask-CORS>=5.0.0
+
+# Configuration
+python-dotenv>=1.0.1

@@ -1,0 +1,31 @@
+ 
+
+services:
+
+  mongo:
+
+    image: mongo:7.0 # or latest
+
+    container_name: mongodb
+
+    restart: always
+
+    ports:
+
+      - "27018:27017"
+
+    volumes:
+
+      - mongo_data:/data/db
+
+      - ./mongo_seed:/mongo_seed
+      - ./init-mongo.sh:/docker-entrypoint-initdb.d/init-mongo.sh
+ 
+
+volumes:
+
+  mongo_data:
+
+ 
+ 
+ 
